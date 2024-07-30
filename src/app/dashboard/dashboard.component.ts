@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export default class DashboardComponent {
+
+  users = signal<any[]>([{id:1}, {id: 2}, {id: 3}]);
 
 }
